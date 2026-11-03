@@ -1,0 +1,76 @@
+{
+  "source": "Local archive PS_20174392719_1491204439457_log.csv.zip; publisher reference https://www.kaggle.com/datasets/ealaxi/paysim1",
+  "provenance_limit": "Local filename and content verified; original download chain cannot be independently authenticated.",
+  "csv_sha256": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b",
+  "rows": 6362620,
+  "frauds": 8213,
+  "prevalence": 0.001290820448180152,
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "nameOrig",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "nameDest",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFraud",
+    "isFlaggedFraud"
+  ],
+  "dtypes": {
+    "step": "int16",
+    "type": "category",
+    "amount": "float64",
+    "nameOrig": "string",
+    "oldbalanceOrg": "float64",
+    "newbalanceOrig": "float64",
+    "nameDest": "string",
+    "oldbalanceDest": "float64",
+    "newbalanceDest": "float64",
+    "isFraud": "int8",
+    "isFlaggedFraud": "int8"
+  },
+  "missing": {
+    "step": 0,
+    "type": 0,
+    "amount": 0,
+    "nameOrig": 0,
+    "oldbalanceOrg": 0,
+    "newbalanceOrig": 0,
+    "nameDest": 0,
+    "oldbalanceDest": 0,
+    "newbalanceDest": 0,
+    "isFraud": 0,
+    "isFlaggedFraud": 0
+  },
+  "exact_duplicate_rows": 0,
+  "types": {
+    "CASH_IN": {
+      "size": 1399284,
+      "sum": 0
+    },
+    "CASH_OUT": {
+      "size": 2237500,
+      "sum": 4116
+    },
+    "DEBIT": {
+      "size": 41432,
+      "sum": 0
+    },
+    "PAYMENT": {
+      "size": 2151495,
+      "sum": 0
+    },
+    "TRANSFER": {
+      "size": 532909,
+      "sum": 4097
+    }
+  },
+  "first_hour": 1,
+  "last_hour": 743,
+  "hours": 743,
+  "amount_min": 0.0,
+  "amount_max": 92445516.64,
+  "sender_repeated_rows": 18611
+}

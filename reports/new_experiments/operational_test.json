@@ -1,0 +1,13 @@
+{
+  "balance_shortfalls": 726412,
+  "held_rows": 726426,
+  "held_legitimate_labels": 726416,
+  "held_fraud_labels": 10,
+  "action_counts": {
+    "validation_hold": 726426,
+    "standard_checks": 562852,
+    "priority_review": 4243,
+    "additional_verification": 2
+  },
+  "note": "Operational holds are not model false positives or fraud verdicts; many PaySim balances are inconsistent"
+}

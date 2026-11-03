@@ -1,0 +1,55 @@
+{
+  "cut_hours": [
+    251,
+    280,
+    307,
+    354
+  ],
+  "partitions": {
+    "fit": {
+      "rows": 3283561,
+      "frauds": 2851,
+      "prevalence": 0.000868264667536251,
+      "first_hour": 1,
+      "last_hour": 251
+    },
+    "calibration_fit": {
+      "rows": 509260,
+      "frauds": 324,
+      "prevalence": 0.0006362172564112634,
+      "first_hour": 252,
+      "last_hour": 280
+    },
+    "calibration_check": {
+      "rows": 517426,
+      "frauds": 296,
+      "prevalence": 0.000572062478499341,
+      "first_hour": 281,
+      "last_hour": 307
+    },
+    "selection": {
+      "rows": 758850,
+      "frauds": 484,
+      "prevalence": 0.0006378072082756803,
+      "first_hour": 308,
+      "last_hour": 354
+    },
+    "test": {
+      "rows": 1293523,
+      "frauds": 4258,
+      "prevalence": 0.003291785302619281,
+      "first_hour": 355,
+      "last_hour": 743
+    },
+    "development": {
+      "rows": 5069097,
+      "frauds": 3955,
+      "prevalence": 0.0007802178573422445,
+      "first_hour": 1,
+      "last_hour": 354
+    }
+  },
+  "development_fraction": 0.7966996300266243,
+  "logic": "Nearest cumulative row count at complete hour; four chronological development blocks",
+  "seed": 42
+}

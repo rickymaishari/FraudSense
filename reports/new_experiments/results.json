@@ -1,0 +1,314 @@
+{
+  "champion": "random_forest",
+  "calibration": {
+    "chosen": "isotonic",
+    "independent_check": {
+      "raw": {
+        "rows": 517426,
+        "frauds": 296,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "average_precision": 1.0,
+        "roc_auc": 0.9999999999999999,
+        "tn": 517130,
+        "fp": 0,
+        "fn": 0,
+        "tp": 296,
+        "confusion_matrix": [
+          [
+            517130,
+            0
+          ],
+          [
+            0,
+            296
+          ]
+        ],
+        "false_alarms_per_1000": 0.0,
+        "review_rate": 0.000572062478499341,
+        "brier": 8.175212009118961e-05,
+        "log_loss": 0.0025033349495988256,
+        "threshold": 0.5
+      },
+      "sigmoid": {
+        "rows": 517426,
+        "frauds": 296,
+        "precision": 1.0,
+        "recall": 0.9966216216216216,
+        "f1": 0.9983079526226735,
+        "average_precision": 1.0,
+        "roc_auc": 0.9999999999999999,
+        "tn": 517130,
+        "fp": 0,
+        "fn": 1,
+        "tp": 295,
+        "confusion_matrix": [
+          [
+            517130,
+            0
+          ],
+          [
+            1,
+            295
+          ]
+        ],
+        "false_alarms_per_1000": 0.0,
+        "review_rate": 0.0005701298349908972,
+        "brier": 8.873791491053374e-07,
+        "log_loss": 2.4391149276539637e-05,
+        "threshold": 0.5
+      },
+      "isotonic": {
+        "rows": 517426,
+        "frauds": 296,
+        "precision": 1.0,
+        "recall": 0.9898648648648649,
+        "f1": 0.9949066213921902,
+        "average_precision": 1.0,
+        "roc_auc": 1.0,
+        "tn": 517130,
+        "fp": 0,
+        "fn": 3,
+        "tp": 293,
+        "confusion_matrix": [
+          [
+            517130,
+            0
+          ],
+          [
+            3,
+            293
+          ]
+        ],
+        "false_alarms_per_1000": 0.0,
+        "review_rate": 0.0005662645479740098,
+        "brier": 2.2990733078566607e-06,
+        "log_loss": 5.782701581185302e-06,
+        "threshold": 0.5
+      }
+    }
+  },
+  "policy": {
+    "low": 0.004069144878,
+    "high": 0.333333333333,
+    "selection_review_rate": 0.000641760558740199,
+    "objective": "Maximize selection F1 within 0.5% review budget; low is tie-aware budget threshold"
+  },
+  "coverage": {
+    "CASH_IN": {
+      "amount": [
+        0.9599999785423279,
+        1915267.875
+      ],
+      "opening_balance": [
+        0.0,
+        38939424.0
+      ],
+      "amount_balance_ratio": [
+        1.78115755034014e-07,
+        813160.8125
+      ]
+    },
+    "CASH_OUT": {
+      "amount": [
+        0.0,
+        10000000.0
+      ],
+      "opening_balance": [
+        0.0,
+        13796062.0
+      ],
+      "amount_balance_ratio": [
+        0.0,
+        1000000.0
+      ]
+    },
+    "DEBIT": {
+      "amount": [
+        0.550000011920929,
+        569077.5
+      ],
+      "opening_balance": [
+        0.0,
+        4362014.0
+      ],
+      "amount_balance_ratio": [
+        5.918407168792328e-06,
+        569077.5
+      ]
+    },
+    "PAYMENT": {
+      "amount": [
+        0.019999999552965164,
+        176479.953125
+      ],
+      "opening_balance": [
+        0.0,
+        11150736.0
+      ],
+      "amount_balance_ratio": [
+        1.4620168542478496e-07,
+        146931.71875
+      ]
+    },
+    "TRANSFER": {
+      "amount": [
+        2.5999999046325684,
+        10000000.0
+      ],
+      "opening_balance": [
+        0.0,
+        37670040.0
+      ],
+      "amount_balance_ratio": [
+        0.00019294982485007495,
+        1000000.0
+      ]
+    }
+  },
+  "anomaly_validation": {
+    "average_precision": 0.0054697355082275545,
+    "additional_alerts": 3747,
+    "additional_frauds": 0,
+    "additional_precision": 0.0,
+    "routing_enabled": false,
+    "reason": "Exploratory anomaly indicator only; no operational routing without external validation"
+  },
+  "split": {
+    "cut_hours": [
+      251,
+      280,
+      307,
+      354
+    ],
+    "partitions": {
+      "fit": {
+        "rows": 3283561,
+        "frauds": 2851,
+        "prevalence": 0.000868264667536251,
+        "first_hour": 1,
+        "last_hour": 251
+      },
+      "calibration_fit": {
+        "rows": 509260,
+        "frauds": 324,
+        "prevalence": 0.0006362172564112634,
+        "first_hour": 252,
+        "last_hour": 280
+      },
+      "calibration_check": {
+        "rows": 517426,
+        "frauds": 296,
+        "prevalence": 0.000572062478499341,
+        "first_hour": 281,
+        "last_hour": 307
+      },
+      "selection": {
+        "rows": 758850,
+        "frauds": 484,
+        "prevalence": 0.0006378072082756803,
+        "first_hour": 308,
+        "last_hour": 354
+      },
+      "test": {
+        "rows": 1293523,
+        "frauds": 4258,
+        "prevalence": 0.003291785302619281,
+        "first_hour": 355,
+        "last_hour": 743
+      },
+      "development": {
+        "rows": 5069097,
+        "frauds": 3955,
+        "prevalence": 0.0007802178573422445,
+        "first_hour": 1,
+        "last_hour": 354
+      }
+    },
+    "development_fraction": 0.7966996300266243,
+    "logic": "Nearest cumulative row count at complete hour; four chronological development blocks",
+    "seed": 42
+  },
+  "selection_rule": "Highest selection AP among supervised candidates; F1 tie-break; ablations excluded",
+  "python": "3.13.3",
+  "seed": 42,
+  "dataset_sha256": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b",
+  "test": {
+    "rows": 1293523,
+    "frauds": 4258,
+    "precision": 0.9992947813822285,
+    "recall": 0.9983560356975105,
+    "f1": 0.9988251879699247,
+    "average_precision": 0.9985913857238399,
+    "roc_auc": 0.9992954345802202,
+    "tn": 1289262,
+    "fp": 3,
+    "fn": 7,
+    "tp": 4251,
+    "confusion_matrix": [
+      [
+        1289262,
+        3
+      ],
+      [
+        7,
+        4251
+      ]
+    ],
+    "false_alarms_per_1000": 0.002326907191306675,
+    "review_rate": 0.003288692972602729,
+    "brier": 1.4759927650693574e-05,
+    "log_loss": 0.0001940492312844649,
+    "threshold": 0.333333333333,
+    "inference_ms_per_row": 0.0006377057075871205
+  },
+  "test_supported": {
+    "rows": 1293406,
+    "frauds": 4248,
+    "precision": 0.9992931196983977,
+    "recall": 0.998352165725047,
+    "f1": 0.9988224211022139,
+    "average_precision": 0.9985880494981819,
+    "roc_auc": 0.9992937759979508,
+    "tn": 1289155,
+    "fp": 3,
+    "fn": 7,
+    "tp": 4241,
+    "confusion_matrix": [
+      [
+        1289155,
+        3
+      ],
+      [
+        7,
+        4241
+      ]
+    ],
+    "false_alarms_per_1000": 0.002327100324397785,
+    "review_rate": 0.0032812589395750445,
+    "brier": 1.4708961689515554e-05,
+    "log_loss": 0.00019383389101309908,
+    "threshold": 0.333333333333
+  },
+  "test_coverage": 0.9999095493470158,
+  "test_withheld": 117,
+  "test_withheld_frauds": 10,
+  "shortcut": {
+    "fit": {
+      "fraud_equal": 2789,
+      "frauds": 2851,
+      "legitimate_equal": 0,
+      "legitimate": 3280710
+    },
+    "test": {
+      "fraud_equal": 4140,
+      "frauds": 4258,
+      "legitimate_equal": 0,
+      "legitimate": 1289265
+    }
+  },
+  "anomaly_test_average_precision": 0.06466465695456253,
+  "elapsed_seconds": 196.73786189999373,
+  "complete_dataset_rows": 6362620
+}

@@ -1,0 +1,28 @@
+{
+  "model_version": "FraudSense-2.0-16910f9057",
+  "schema_version": "2.0",
+  "files": {
+    "artifacts/ablation_no_balance.joblib": "0ff8303f6fe603858559a58f6d1f40f00e79bff4ffcb77558110f67f0e14e341",
+    "artifacts/ablation_no_history.joblib": "b0aaf0bee477e0c3b86e1334dd2897635709a8b8e289c462f3353ae7eb159eae",
+    "artifacts/ablation_rf_no_balance.joblib": "dac1be53d70f2a2f9e332a97efeb0b92de11e32f0610abc2373ea923be6e78c6",
+    "artifacts/champion.joblib": "80d0167108a46d2e2fb4d834c2753f77ac0af1762d304758fa96224425f615ac",
+    "artifacts/logistic.joblib": "b575d3838ba4e6f8e627ab2abd26502a10342e63d412087243ddd9ffb92b41d8",
+    "artifacts/majority.joblib": "c587583b3f74fa0b0b74c10a5830a9fa214309a4e9018829c07def95c64b8fd3",
+    "artifacts/random_forest.joblib": "8e35e172abc0a17c9bba16010d8800000c24d2c215e83f8fb333770423d3f628",
+    "artifacts/xgboost_depth4.joblib": "947d142b2382e95f257ca041ddf9190b69cbab66042b40e1c5eabd1774464163",
+    "artifacts/xgboost_depth6.joblib": "adf39c803cb933cb33638eef40fe8f8eea30845cb69c800ea559752aa90d88c5",
+    "fraudsense/data.py": "4d83498fd61d3cbeed7f9b1802fdf702ff424545ae246858146378b33cd134e6",
+    "fraudsense/evaluation.py": "7aaed96ba9e01bed6bbb428b2c775a3cec810441a8b538a45c45ac27f6ea257c",
+    "fraudsense/features.py": "5096938ade9ba7e77ad7dd9f6e1812045d377e36c473fdefebd654b1d21320de",
+    "fraudsense/model.py": "07837147e6700c0269f05df4f0e1b00f71753b0fd3ec80a2fad970b4b01d914f",
+    "fraudsense/risk.py": "ef9ea453fc73084840553ec8bffd1e458f005f6a403a3fc6d42130b92b5cda74",
+    "fraudsense/service.py": "f9a1275c535c463fcd8183a06fe322a027d5931ead2ba06a6b72458d9d604e21",
+    "fraudsense/__init__.py": "d091011a5af60120cb0139a4ca1b8169393c2eaffbbae472bc411c5120f345c3",
+    "backend/main.py": "ff9b7546b7cf578858e7c783e708eeae53d8f1e3df006fda23d478739c228922",
+    "backend/schemas.py": "0ec45562079cd64749d59bc3846f6e1823c6c061b49021f1d50f7a908d445cc0",
+    "backend/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "requirements.txt": "4469ac33ab51b962cc75d2b167d0411fa44797b6dd84c2c281d5eeee34a580a9",
+    "requirements-lock.txt": "62ce80188a678444ac664d2d211ad49e334afb513aa51e03b89589b432ee6893",
+    "reports/new_experiments/frozen_development_decisions.json": "6ba06e2147ba161d8fb0441248c872390fcf11228dc1bfe13bc06fbfb523d22c"
+  }
+}

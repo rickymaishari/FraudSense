@@ -1,0 +1,67 @@
+{
+  "purpose": "Fixed-hyperparameter diagnostic; trained after main evaluation; no model or threshold changes to champion",
+  "model": "random_forest_without_balance",
+  "train_seconds": 36.260327000010875,
+  "policy": {
+    "low": 0.6485065176967474,
+    "high": 0.7958884015192144,
+    "selection_review_rate": 0.0049996705541279565,
+    "objective": "Maximize selection F1 within 0.5% review budget; low is tie-aware budget threshold"
+  },
+  "validation": {
+    "rows": 758850,
+    "frauds": 484,
+    "precision": 0.11323896752706078,
+    "recall": 0.2809917355371901,
+    "f1": 0.16142433234421363,
+    "average_precision": 0.0991992846489886,
+    "roc_auc": 0.9613099424637261,
+    "tn": 757301,
+    "fp": 1065,
+    "fn": 348,
+    "tp": 136,
+    "confusion_matrix": [
+      [
+        757301,
+        1065
+      ],
+      [
+        348,
+        136
+      ]
+    ],
+    "false_alarms_per_1000": 1.4043351099600985,
+    "review_rate": 0.0015826579692956447,
+    "brier": 0.019239266882500432,
+    "log_loss": 0.09617925762521598,
+    "threshold": 0.7958884015192144
+  },
+  "test": {
+    "rows": 1293523,
+    "frauds": 4258,
+    "precision": 0.5133565621370499,
+    "recall": 0.3114138093001409,
+    "f1": 0.3876626224236223,
+    "average_precision": 0.3849146260268874,
+    "roc_auc": 0.9653125208954181,
+    "tn": 1288008,
+    "fp": 1257,
+    "fn": 2932,
+    "tp": 1326,
+    "confusion_matrix": [
+      [
+        1288008,
+        1257
+      ],
+      [
+        2932,
+        1326
+      ]
+    ],
+    "false_alarms_per_1000": 0.9749741131574967,
+    "review_rate": 0.001996872108188258,
+    "brier": 0.01960176452748141,
+    "log_loss": 0.09474468885645225,
+    "threshold": 0.7958884015192144
+  }
+}
